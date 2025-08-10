@@ -6,11 +6,13 @@
   publish = "build"
   
   # Default build command - install dependencies then build
-  command = "npm ci && npm run build"
+  command = "npm install && npm run build"
 
 [build.environment]
-  # Node.js version
-  NODE_VERSION = "18"
+  # Node.js version - using LTS version
+  NODE_VERSION = "16"
+  # NPM version
+  NPM_VERSION = "8.19.4"
 
 [[redirects]]
   # Redirect all routes to index.html for single page applications
