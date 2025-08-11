@@ -148,7 +148,7 @@ export const experiences = [
     role: "Big Data Developer (Onsite Vendor)",
     company: "Apple Inc. (deployed by Infosys)",
     date: "June 2022 - Present",
-    desc: "Your experience description here - mention your achievements with data pipelines, ETL processes, etc.",
+    desc: "At Apple I Worked on extracting data from various sources, transforming it into a graph format (nodes and edges), and storing it in Iceberg tables. Writing and deploying Spark (Scala) code to handle data ingestion and transformation, and orchestrating workflows using Airflow",
     skills: [
       "Python",
       "PySpark", 
@@ -165,7 +165,7 @@ export const experiences = [
       role: "Big Data Developer",
       company: "Infosys Ltd.",
       date: "June 2022 - Present",
-      desc: "Your experience description here - mention your achievements with data pipelines, ETL processes, etc.",
+      desc: "I’ve contributed in multiple projects, including the development of scalable ingestion frameworks, improving metadata quality using machine learning models, and deploying robust cloud solutions on platforms like AWS EKS using Kubernetes and Docker.",
       skills: [
         "Python",
         "PySpark",
