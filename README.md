@@ -1,4 +1,4 @@
-# Parth Dhanaba - Data Engineer Portfolio
+# Bhushan Waingankar - Data Engineer Portfolio
 Welcome to my portfolio! This project showcases my skills, projects, and experiences as a Data Engineer.
 
 ### Weblink: [Live Website](https://bhushankorg.github.io)
