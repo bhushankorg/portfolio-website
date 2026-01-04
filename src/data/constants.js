@@ -3,7 +3,7 @@
 
 // 1. BIO SECTION - Replace the entire Bio object
 export const Bio = {
-  name: "Bhushan Waingankar",
+  name: "Parth Dhanaba",
   roles: [
     "Data Engineer",
     "Big Data Developer", 
@@ -15,7 +15,7 @@ export const Bio = {
   github: "https://github.com/bhushankorg",
   resume: "https://drive.google.com/file/d/YOUR_RESUME_ID/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/bhushan-waingankar-b021131a6/",
-  insta: "https://www.instagram.com/bhushan_korg/",
+  insta: "https://www.instagram.com/parthhhhh__7/",
 };
 
 // 2. SKILLS SECTION - Replace the skills array with data engineering focused skills
