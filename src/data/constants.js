@@ -11,7 +11,7 @@ export const Bio = {
     "Cloud Engineer"
   ],
   description:
-    "I am a Data Engineer with 3 years of experience designing and developing large-scale data pipelines, ETL frameworks, and big data solutions. I have a strong background in Python, PySpark, Kubernetes, Kafka, Airflow and AWS cloud services. Passionate about creating scalable data architectures, improving performance, and using cloud technologies to solve complex problems.",
+    "I am a Data Engineer with 1 year of experience designing and developing large-scale data pipelines, ETL frameworks, and big data solutions. I have a strong background in Python, PySpark, Kubernetes, Kafka, Airflow and AWS cloud services. Passionate about creating scalable data architectures, improving performance, and using cloud technologies to solve complex problems.",
   github: "https://github.com/bhushankorg",
   resume: "https://drive.google.com/file/d/YOUR_RESUME_ID/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/bhushan-waingankar-b021131a6/",
