@@ -154,10 +154,10 @@ const Contact = () => {
         <EarthCanvas />
         <Title>Contact</Title>
         <Desc>
-          Feel free to reach out to me for any questions or opportunities!
+          For data engineering opportunities, project conversations, or collaborations, send me a message.
         </Desc>
         <ContactForm onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
+          <ContactTitle>Send me a message</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />

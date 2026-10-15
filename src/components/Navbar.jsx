@@ -150,10 +150,10 @@ const Navbar = () => {
 
         <NavItems>
           <NavLink href="#About">About</NavLink>
-          <NavLink href="#Skills">Skills</NavLink>
           <NavLink href="#Experience">Experience</NavLink>
+          <NavLink href="#Skills">Skills</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
-          <NavLink href="#Education">Education</NavLink>
+          <NavLink href={Bio.linkedin} target="_blank" rel="noreferrer">LinkedIn</NavLink>
         </NavItems>
 
         {isOpen && (
@@ -161,34 +161,35 @@ const Navbar = () => {
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">
               About
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">
-              Skills
-            </NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">
               Experience
+            </NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">
+              Skills
             </NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">
               Projects
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education">
-              Education
+            <NavLink href={Bio.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn
             </NavLink>
             <GithubButton
-              href={Bio.github}
-              target="_Blank"
+              href={Bio.resume}
+              target="_blank"
+              rel="noreferrer"
               style={{
                 background: theme.primary,
                 color: theme.text_primary,
               }}
             >
-              Github Profile
+              Download Resume
             </GithubButton>
           </MobileMenu>
         )}
 
         <ButtonContainer>
-          <GithubButton href={Bio.github} target="_Blank">
-            Github Profile
+          <GithubButton href={Bio.resume} target="_blank" rel="noreferrer">
+            Resume
           </GithubButton>
         </ButtonContainer>
       </NavbarContainer>

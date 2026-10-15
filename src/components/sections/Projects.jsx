@@ -61,13 +61,13 @@ const Projects = ({ openModal, setOpenModal }) => {
   return (
     <Container id="Projects">
       <Wrapper>
-        <Title>Projects</Title>
+        <Title>Selected Projects</Title>
         <Desc
           style={{
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of data engineering projects. From ETL pipelines to real-time streaming solutions. Here are some of my key projects.
+          Independent projects that show how I apply data engineering and AI beyond my day-to-day work.
         </Desc>
         <CardContainer>
           {projects.map((project) => (

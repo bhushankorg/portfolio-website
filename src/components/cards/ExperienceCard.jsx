@@ -61,9 +61,16 @@ const Description = styled.div`
     font-size: 12px;
   }
 `;
-const Span = styled.div`
-  display: -webkit-box;
-  max-width: 100%;
+const HighlightList = styled.ul`
+  margin: 0 0 14px 18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 1.55;
+`;
+const Highlight = styled.li`
+  padding-left: 2px;
 `;
 const Skills = styled.div`
   width: 100%;
@@ -93,7 +100,7 @@ const ExperienceCard = ({ experience }) => {
         <img
           width="100%"
           height="100%"
-          alt={experience.school}
+          alt={experience.company}
           style={{ borderRadius: "50%", objectFit: "cover" }}
           src={experience.img}
         />
@@ -116,7 +123,7 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
     >
       <Top>
-        <Image src={experience.img} />
+        <Image src={experience.img} alt="" />
         <Body>
           <Role>{experience.role}</Role>
           <Company>{experience.company}</Company>
@@ -124,7 +131,13 @@ const ExperienceCard = ({ experience }) => {
         </Body>
       </Top>
       <Description>
-        {experience?.desc && <Span>{experience?.desc}</Span>}
+        {experience?.highlights && (
+          <HighlightList>
+            {experience.highlights.map((highlight) => (
+              <Highlight key={highlight}>{highlight}</Highlight>
+            ))}
+          </HighlightList>
+        )}
         {experience?.skills && (
           <>
             <br />

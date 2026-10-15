@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -91,26 +89,20 @@ const Footer = () => {
         <Logo>Bhushan Waingankar</Logo>
         <Nav>
           <NavLink href="#About">About</NavLink>
-          <NavLink href="#Skills">Skills</NavLink>
           <NavLink href="#Experience">Experience</NavLink>
+          <NavLink href="#Skills">Skills</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#Education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display">
-            <FacebookIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display">
-            <TwitterIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
+          <SocialMediaIcon href={Bio.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <LinkedInIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display">
-            <InstagramIcon />
+          <SocialMediaIcon href={Bio.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+            <GitHubIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Bhushan Waingankar. All rights reserved.</Copyright>
+        <Copyright>&copy; {new Date().getFullYear()} Bhushan Waingankar. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

@@ -127,7 +127,7 @@ const Skills = () => {
             marginBottom: "40px",
           }}
         >
-          Here are some of my technical skills in data engineering, big data technologies, and cloud platforms that I have been working with for the past 3 years.
+          C++, Java, Python, and Scala; distributed systems, backend APIs, AWS, and Google Cloud. AWS Certified Solutions Architect – Associate.
         </Desc>
 
         <SkillsContainer>
@@ -138,7 +138,7 @@ const Skills = () => {
                 <SkillList>
                   {skill.skills.map((item, index_x) => (
                     <SkillItem key={`skill-x-${index_x}`}>
-                      <SkillImage src={item.image} />
+                      {item.image && <SkillImage src={item.image} alt="" />}
                       {item.name}
                     </SkillItem>
                   ))}

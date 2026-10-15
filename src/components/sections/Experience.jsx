@@ -60,8 +60,7 @@ const Experience = () => {
             marginBottom: "40px",
           }}
         >
-          My work experience as a Data Engineer, designing and developing
-          large-scale data pipelines and big data solutions.
+          Building distributed platforms and data systems across Walmart and Apple, from ingestion and graph processing to cloud services.
         </Desc>
 
         <VerticalTimeline>

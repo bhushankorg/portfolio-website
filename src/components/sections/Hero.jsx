@@ -73,7 +73,7 @@ const HeroRightContainer = styled.div`
   }
 `;
 
-const Title = styled.div`
+const Title = styled.h1`
   font-weight: 700;
   font-size: 50px;
   color: ${({ theme }) => theme.text_primary};
@@ -87,6 +87,52 @@ const Title = styled.div`
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 8px;
+  }
+`;
+
+const ImpactGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 26px auto 0;
+
+  @media (max-width: 760px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 8px;
+  }
+`;
+
+const ImpactCard = styled.div`
+  min-height: 100px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  background: rgba(17, 25, 40, 0.76);
+`;
+
+const ImpactNumber = styled.div`
+  color: ${({ theme }) => theme.primary};
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+`;
+
+const ImpactLabel = styled.div`
+  margin-top: 6px;
+  color: ${({ theme }) => theme.text_secondary};
+  font-size: 13px;
+  line-height: 1.45;
+`;
+
+const ActionLinks = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  @media (max-width: 960px) {
+    justify-content: center;
   }
 `;
 
@@ -177,6 +223,13 @@ const ResumeButton = styled.a`
     color: white;
 `;
 
+const ProfileButton = styled(ResumeButton)`
+  color: ${({ theme }) => theme.text_primary};
+  background: rgba(17, 25, 40, 0.76);
+  border: 1px solid ${({ theme }) => theme.primary};
+  box-shadow: none;
+`;
+
 const Img = styled.img`
   border-radius: 50%;
   width: 100%;
@@ -224,15 +277,13 @@ const Hero = () => {
           <HeroBgAnimation />
         </HeroBg>
 
-        <motion.div {...headContainerAnimation}>
+        <motion.div {...headContainerAnimation} style={{ width: "100%" }}>
           <HeroInnerContainer>
             <HeroLeftContainer>
               <motion.div {...headTextAnimation}>
-                <Title>
-                  Hi, I am <br /> {Bio.name}
-                </Title>
+                <Title>{Bio.name}</Title>
                 <TextLoop>
-                  I am a
+                  Software Engineer III ·
                   <Span>
                     <Typewriter
                       options={{
@@ -249,9 +300,14 @@ const Hero = () => {
                 <SubTitle>{Bio.description}</SubTitle>
               </motion.div>
 
-              <ResumeButton href={Bio.resume} target="_blank">
-                Check Resume
-              </ResumeButton>
+              <ActionLinks>
+                <ResumeButton href={Bio.resume} target="_blank" rel="noreferrer">
+                  Download Resume
+                </ResumeButton>
+                <ProfileButton href={Bio.linkedin} target="_blank" rel="noreferrer">
+                  LinkedIn
+                </ProfileButton>
+              </ActionLinks>
             </HeroLeftContainer>
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
@@ -261,6 +317,24 @@ const Hero = () => {
               </motion.div>
             </HeroRightContainer>
           </HeroInnerContainer>
+          <ImpactGrid aria-label="Selected career impact">
+            <ImpactCard>
+              <ImpactNumber>1,213</ImpactNumber>
+              <ImpactLabel>high-priority vulnerabilities surfaced across 142 repositories</ImpactLabel>
+            </ImpactCard>
+            <ImpactCard>
+              <ImpactNumber>45%</ImpactNumber>
+              <ImpactLabel>lower data availability latency after redesigning ingestion</ImpactLabel>
+            </ImpactCard>
+            <ImpactCard>
+              <ImpactNumber>15%</ImpactNumber>
+              <ImpactLabel>improvement in search relevance at AppleCare</ImpactLabel>
+            </ImpactCard>
+            <ImpactCard>
+              <ImpactNumber>800+</ImpactNumber>
+              <ImpactLabel>problems solved across LeetCode and Codeforces</ImpactLabel>
+            </ImpactCard>
+          </ImpactGrid>
         </motion.div>
       </HeroContainer>
     </div>
