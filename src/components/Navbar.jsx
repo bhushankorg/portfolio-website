@@ -154,6 +154,7 @@ const Navbar = () => {
           <NavLink href="#Skills">Skills</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href={Bio.linkedin} target="_blank" rel="noreferrer">LinkedIn</NavLink>
+          <NavLink href={Bio.leetcode} target="_blank" rel="noreferrer">LeetCode</NavLink>
         </NavItems>
 
         {isOpen && (
@@ -172,6 +173,9 @@ const Navbar = () => {
             </NavLink>
             <NavLink href={Bio.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
+            </NavLink>
+            <NavLink href={Bio.leetcode} target="_blank" rel="noreferrer">
+              LeetCode
             </NavLink>
             <GithubButton
               href={Bio.resume}

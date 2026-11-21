@@ -1,11 +1,12 @@
 export const Bio = {
   name: "Bhushan Waingankar",
-  roles: ["Distributed Systems Engineer", "Data Engineer", "Backend Engineer"],
+  roles: ["Distributed Systems Engineer", "Security Engineer", "Data Engineer"],
   description:
-    "Software Engineer with 4+ years building large-scale platforms at Walmart and Apple. I design fault-tolerant data workflows, distributed processing systems, and backend services for multi-terabyte workloads across AWS and Google Cloud.",
+    "Software Engineer with 4+ years building large-scale platforms at Walmart and Apple. I design fault-tolerant data workflows and distributed processing systems, and own the detection layer of an AI-assisted vulnerability-scanning initiative combining deterministic static analysis with LLM-based detection.",
   github: "https://github.com/bhushankorg",
-  resume: `${process.env.PUBLIC_URL}/Bhushan-Waingankar-Resume.pdf`,
+  resume: "/Bhushan-Waingankar-Resume.pdf",
   linkedin: "https://www.linkedin.com/in/bhushan-waingankar-b021131a6/",
+  leetcode: "https://leetcode.com/u/Bhushan_Waingankar/",
   email: "bhushanwaingankar.bw@gmail.com",
 };
 
@@ -50,6 +51,15 @@ export const skills = [
       { name: "Grafana", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Grafana_logo.svg/1200px-Grafana_logo.svg.png" },
     ],
   },
+  {
+    title: "Security & AI",
+    skills: [
+      { name: "SAST", image: "" },
+      { name: "Vulnerability Management", image: "" },
+      { name: "LLM-Assisted Detection", image: "" },
+      { name: "RAG / Semantic Search", image: "" },
+    ],
+  },
 ];
 
 export const experiences = [
@@ -60,10 +70,10 @@ export const experiences = [
     company: "Walmart Global Tech · Third-Party Data · Bengaluru",
     date: "July 2026 - Present",
     highlights: [
-      "Built an enterprise vulnerability-scanning platform across 142 repositories; deterministic SAST and LLM detection surfaced 1,213 high-priority vulnerabilities.",
-      "Moved vendor ingestion to direct BigQuery sharing, cutting data availability latency by 45% and pipeline costs by 20%.",
-      "Designed a fault-tolerant, bidirectional Mastercard integration on Google Cloud for multi-terabyte workflows.",
-      "Built schema-aware ingestion for third-party market-share feeds, handling schema evolution and enabling cross-team access.",
+      "Own the detection layer of an enterprise-wide vulnerability-scanning platform; deterministic SAST and an LLM-based detection layer surface and help remediate high-priority code vulnerabilities across the org's codebase.",
+      "Redesigned vendor ingestion to use direct BigQuery-to-BigQuery sharing instead of multi-step staging, meaningfully reducing data-availability latency and pipeline infrastructure cost.",
+      "Architected a fault-tolerant, bidirectional integration layer between internal systems and an external payments partner on Google Cloud for multi-terabyte workflows.",
+      "Built schema-aware ingestion for a third-party market-share data feed, handling schema evolution and enabling cross-team access.",
     ],
     skills: ["Google Cloud", "BigQuery", "Dataproc", "Distributed Systems", "LLM-assisted SAST"],
   },
